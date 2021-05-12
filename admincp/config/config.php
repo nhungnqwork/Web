@@ -1,6 +1,7 @@
 <?php 
 
-	$mysqli = new mysqli("localhost","root","mysql","web_toy");
+	$mysqli = new mysqli("heroku pg:psql postgresql-acute-06409 --app quynhnhungliving
+","root","mysql","web_toy");
 
 	// Check connection
 	if ($mysqli->connect_errno) {
