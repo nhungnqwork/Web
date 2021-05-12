@@ -1,9 +1,9 @@
 
 .wrapper{
-    border:1px solid #000;
-    height: auto;
-    width: 90%;
-    margin:0 auto;
+	border:1px solid #000;
+	height: auto;
+	width: 85%;
+	margin:0 auto;
 }
 i.fa.fa-plus.fa-style {
     font-size: 20px;
@@ -42,57 +42,54 @@ input.themgiohang {
     cursor: pointer;
 }
 .header{
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 180px;
-    border:1px solid #ff80ff;
-    height: 180px;
-    width: 100%;
-    
+	background-image: url("../images/x.jpg");
+	background-size: 100% 380px;
+	height: 380px;
+	width: 100%;
+	
 }
 .menu{
-    border:1px solid #1aff8c;
-    height: 50px;
-    width: 100%;
-    background: #00e6ac;
+	border:1px solid #CCCCCC;
+	height: 105px;
+	width: 100%;
+	background: #DDDDDD;
 }
 ul.list_menu {
     padding: 0;
     margin: 0;
-    width: 70%;
-    border: 1px solid #;
-    list-style: none;
+    width: 100%;
+/*    border: 1px solid #;
+*/    list-style: none;
     margin: 0 auto;
     line-height: 27px;
 
 }
 ul.list_menu li:hover {
-    background: burlywood;
+    background: #FFFFE0;
 }
 ul.list_menu li a {
     text-decoration: none;
     text-align: center;
-    color: #3333ff;
+    color: black;
 }
 ul.list_menu li {
     float: left;
-   
-    margin: 7px;
+    margin: 10px;
     padding: 5px;
    
 }
 #main{
-    border:1px solid  #00ff80;
-    height: auto;
-    width: 100%;
+/*	border:1px solid  #00ff80;
+*/	height: auto;
+	width: 100%;
 }
 .sidebar{
-    border:1px solid #000066;
-    height: 390px;
-    width: 20%;
-    margin-top:5px;
-    margin-left:5px;
-    float: left;
+	border:1px solid #000066;
+	height: 300px;
+	width: 20%;
+	margin-top:5px;
+	margin-left:900px;
+	float: left;
 }
 ul.list_sidebar {
     padding: 0;
@@ -118,16 +115,16 @@ ul.list_sidebar li {
    
 }
 .maincontent{
-    
-    height: auto;
-    width: 79%;
-    margin-top:5px;
-    margin-left:5px;
-    float: right;
+	height: auto;
+	width: 100%;
+	margin-top:5px;
+	margin-left:5px;
+    padding-bottom: 10px;
+	float: right;
 }
 ul.product_list {
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 20px;
     list-style: none;
     width: 100%;
 }
@@ -138,7 +135,7 @@ ul.product_list li img {
 ul.product_list li {
     width: 19%;
     border: 1px solid #ddd;
-    margin: 5px;
+    margin: 15px;
     float: left;
    
     height: 300px;
@@ -162,16 +159,16 @@ p.title_product {
     font-weight: bold;
 }
 .footer{
-    border:1px solid #ff1a8c;
-    height: 150px;
-    width: 100%;
-    background: #00cc99;
+	border:1px solid white;
+	height: 150px;
+	width: 100%;
+	background: grey;
 }
 p.footer_copyright {
     text-align: center;
-    color: #000;
-}
+/*    color: #000;
+*/}
 .clear{
-    clear: both;
+	clear: both;
 }
 

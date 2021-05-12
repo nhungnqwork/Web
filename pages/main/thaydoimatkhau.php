@@ -8,32 +8,32 @@
 		$count = mysqli_num_rows($row);
 		if($count>0){
 			$sql_update = mysqli_query($mysqli,"UPDATE tbl_dangky SET matkhau='".$matkhau_moi."'");
-			echo '<p style="color:green">Mật khẩu đã được thay đổi."</p>';
+			echo '<p style="color:green">Password has been changed."</p>';
 		}else{
-			echo '<p style="color:red">Tài khoản hoặc Mật khẩu cũ không đúng,vui lòng nhập lại."</p>';
+			echo '<p style="color:red">Old account or password is incorrect, please re-enter."</p>';
 		}
 	} 
 ?>
 <form action="" autocomplete="off" method="POST">
 		<table border="1" class="table-login" style="text-align: center;border-collapse: collapse;">
 			<tr>
-				<td colspan="2"><h3>Đổi mật khẩu Admin</h3></td>
+				<td colspan="2"><h3>Change password by Admin</h3></td>
 			</tr>
 			<tr>
-				<td>Tài khoản</td>
+				<td>User</td>
 				<td><input type="text" name="email"></td>
 			</tr>
 			<tr>
-				<td>Mật khẩu cũ</td>
+				<td>Old password</td>
 				<td><input type="text" name="password_cu"></td>
 			</tr>
 			<tr>
-				<td>Mật khẩu mới</td>
+				<td>New password</td>
 				<td><input type="text" name="password_moi"></td>
 			</tr>
 			<tr>
 				
-				<td colspan="2"><input type="submit" name="doimatkhau" value="Đổi mật khẩu"></td>
+				<td colspan="2"><input type="submit" name="doimatkhau" value="Change password"></td>
 			</tr>
 	</table>
 	</form>

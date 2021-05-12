@@ -4,7 +4,8 @@
 		header('Location:login.php');
 	}
 ?>
-<p><a href="index.php?dangxuat=1">Đăng xuất : <?php if(isset($_SESSION['dangnhap'])){
+<p><a href="index.php?dangxuat=1"></i>
+ LOG OUT: <?php if(isset($_SESSION['dangnhap'])){
 		echo $_SESSION['dangnhap'];
 
 	} ?></a></p>

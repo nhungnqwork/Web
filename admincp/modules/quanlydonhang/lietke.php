@@ -1,4 +1,4 @@
-<p>Liệt kê đơn hàng</p>
+<p>List of orders</p>
 <?php
 	$sql_lietke_dh = "SELECT * FROM tbl_cart,tbl_dangky WHERE tbl_cart.id_khachhang=tbl_dangky.id_dangky ORDER BY tbl_cart.id_cart DESC";
 	$query_lietke_dh = mysqli_query($mysqli,$sql_lietke_dh);
@@ -6,13 +6,13 @@
 <table style="width:100%" border="1" style="border-collapse: collapse;">
   <tr>
   	<th>Id</th>
-    <th>Mã đơn hàng</th>
-    <th>Tên khách hàng</th>
-    <th>Địa chỉ</th>
+    <th>Code</th>
+    <th>Name of customer</th>
+    <th>Address</th>
     <th>Email</th>
-    <th>Số điện thoại</th>
-    <th>Tình trạng</th>
-  	<th>Quản lý</th>
+    <th>Phone</th>
+    <th>Status</th>
+  	<th>Management</th>
   
   </tr>
   <?php
@@ -29,14 +29,14 @@
     <td><?php echo $row['dienthoai'] ?></td>
     <td>
     	<?php if($row['cart_status']==1){
-    		echo '<a href="modules/quanlydonhang/xuly.php?code='.$row['code_cart'].'">Đơn hàng mới</a>';
+    		echo '<a href="modules/quanlydonhang/xuly.php?code='.$row['code_cart'].'">New Orders</a>';
     	}else{
-    		echo 'Đã xem';
+    		echo 'Seen';
     	}
     	?>
     </td>
    	<td>
-   		<a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'] ?>">Xem đơn hàng</a> 
+   		<a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'] ?>">View Orders</a> 
    	</td>
    
   </tr>

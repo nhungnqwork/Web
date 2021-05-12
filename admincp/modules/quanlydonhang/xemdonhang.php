@@ -1,4 +1,4 @@
-<p>Xem đơn hàng</p>
+<p>View Orders</p>
 <?php
 	$code = $_GET['code'];
 	$sql_lietke_dh = "SELECT * FROM tbl_cart_details,tbl_sanpham WHERE tbl_cart_details.id_sanpham=tbl_sanpham.id_sanpham AND tbl_cart_details.code_cart='".$code."' ORDER BY tbl_cart_details.id_cart_details DESC";
@@ -7,11 +7,11 @@
 <table style="width:100%" border="1" style="border-collapse: collapse;">
   <tr>
   	<th>Id</th>
-    <th>Mã đơn hàng</th>
-    <th>Tên sản phẩm</th>
-    <th>Số lượng</th>
-    <th>Đơn giá</th>
-    <th>Thành tiền</th>
+    <th>Code</th>
+    <th>Name of product</th>
+    <th>Amount</th>
+    <th>Price</th>
+    <th>Total</th>
   
   
   </tr>

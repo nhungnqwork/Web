@@ -1,14 +1,12 @@
-	<div id="main">
-			<?php
-			include("sidebar/sidebar.php"); 
-			?>
+ 	<div id="main">
+			
 
 			<div class="maincontent">
 				<?php
 				if(isset($_GET['quanly'])){
 					$tam = $_GET['quanly'];
 				}else{
-					$tam = '';
+					$tam = ' ';
 				}
 				if($tam=='danhmucsanpham'){
 					include("main/danhmuc.php");
@@ -38,4 +36,4 @@
 				?>
 			</div>
 
-		</div>
+		</div> 

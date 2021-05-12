@@ -12,27 +12,28 @@
 			$_SESSION['id_khachhang'] = $row_data['id_dangky'];
 			header("Location:index.php?quanly=giohang");
 		}else{
-			echo '<p style="color:red">Mật khẩu hoặc Email sai ,vui lòng nhập lại.</p>';
+			echo '<p style="color:red">Password or Email is wrong, please re-enter.</p>';
 			
 		}
 	} 
 ?>
+<br><br>
 <form action="" autocomplete="off" method="POST">
 		<table border="1" width="50%" class="table-login" style="text-align: center;border-collapse: collapse;">
 			<tr>
-				<td colspan="2"><h3>Đăng nhập khách hàng</h3></td>
+				<td colspan="2"><h3>User Login</h3></td>
 			</tr>
 			<tr>
-				<td>Tài khoản</td>
+				<td>User</td>
 				<td><input type="text" size="50" name="email" placeholder="Email..."></td>
 			</tr>
 			<tr>
-				<td>Mật khẩu</td>
-				<td><input type="password" size="50" name="password" placeholder="Mật khẩu..."></td>
+				<td>Password</td>
+				<td><input type="password" size="50" name="password" placeholder="Password..."></td>
 			</tr>
 			<tr>
 				
-				<td colspan="2"><input type="submit" name="dangnhap" value="Đăng nhập"></td>
+				<td colspan="2"><input type="submit" name="dangnhap" value="Login"></td>
 			</tr>
 	</table>
 	</form>

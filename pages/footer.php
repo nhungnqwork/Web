@@ -1,4 +1,5 @@
 <div class="clear"></div>
 		<div class="footer">
-			<p class="footer_copyright">Copyright by HIEUTAN developer 2021</p>
+			<br><br><br>
+			<p class="footer_copyright">Copyright by HT Dev 2021</p>
 		</div>

@@ -2,19 +2,19 @@
 	$sql_lietke_sp = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY id_sanpham DESC";
 	$query_lietke_sp = mysqli_query($mysqli,$sql_lietke_sp);
 ?>
-<p>Liệt kê danh mục sản phẩm</p>
+<p>Category of products</p>
 <table style="width:100%" border="1" style="border-collapse: collapse;">
   <tr>
   	<th>Id</th>
-    <th>Tên sản phẩm</th>
-    <th>Hình ảnh</th>
-    <th>Giá sp</th>
-    <th>Số lượng</th>
-    <th>Danh mục</th>
-    <th>Mã sp</th>
-    <th>Tóm tắt</th>
-    <th>Trạng thái</th>
-  	<th>Quản lý</th>
+    <th>Name of products</th>
+    <th>Image</th>
+    <th>[Price]</th>
+    <th>Amount</th>
+    <th>Category</th>
+    <th>Code</th>
+    <th>Sumary</th>
+    <th>Status</th>
+  	<th>Management</th>
   
   </tr>
   <?php
@@ -32,15 +32,16 @@
     <td><?php echo $row['masp'] ?></td>
     <td><?php echo $row['tomtat'] ?></td>
     <td><?php if($row['tinhtrang']==1){
-        echo 'Kích hoạt';
+        echo 'activated';
       }else{
-        echo 'Ẩn';
+        echo 'hide';
       } 
       ?>
       
     </td>
    	<td>
-   		<a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>">Xoá</a> | <a href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham'] ?>">Sửa</a> 
+   		<a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a> | <a href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham'] ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</a> 
    	</td>
    
   </tr>

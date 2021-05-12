@@ -1,4 +1,4 @@
-<div class="sidebar">
+<!-- <div class="sidebar">
 				<ul class="list_sidebar">
 					<?php
 	
@@ -14,4 +14,4 @@
 					?>
 					
 				</ul>
-			</div>
+			</div> -->

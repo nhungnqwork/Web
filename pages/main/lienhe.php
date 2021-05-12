@@ -1,1 +1,1 @@
-<p>Liên hệ</p>
+<p>Connect Us</p>

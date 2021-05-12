@@ -1,4 +1,4 @@
-<p>Giỏ hàng 
+<br><p>Cart 
   <?php
   if(isset($_SESSION['dangky'])){
     echo 'xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
@@ -11,16 +11,17 @@
 		
 	}
 ?>
+
 <table style="width:100%;text-align: center;border-collapse: collapse;" border="1">
   <tr>
     <th>Id</th>
-    <th>Mã sp</th>
-    <th>Tên sản phẩm</th>
-    <th>Hình ảnh</th>
-    <th>Số lượng</th>
-    <th>Giá sản phẩm</th>
-    <th>Thành tiền</th>
-    <th>Quản lý</th>
+    <th>Code</th>
+    <th>Product name</th>
+    <th>Image</th>
+    <th>Amount</th>
+    <th>Price</th>
+    <th>Total</th>
+    <th>Management</th>
    
   </tr>
   <?php
@@ -45,24 +46,24 @@
     </td>
     <td><?php echo number_format($cart_item['giasp'],0,',','.').'vnđ'; ?></td>
     <td><?php echo number_format($thanhtien,0,',','.').'vnđ' ?></td>
-    <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Xoá</a></td>
+    <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Delete</a></td>
   </tr>
   <?php
   	}
   ?>
    <tr>
     <td colspan="8">
-    	<p style="float: left;">Tổng tiền: <?php echo number_format($tongtien,0,',','.').'vnđ' ?></p><br/>
-    	<p style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1">Xoá tất cả</a></p>
+    	<p style="float: left;">Total: <?php echo number_format($tongtien,0,',','.').'vnđ' ?></p><br/>
+    	<p style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1">Delete all</a></p>
       <div style="clear: both;"></div>
       <?php
         if(isset($_SESSION['dangky'])){
           ?>
-           <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
+           <p><a href="pages/main/thanhtoan.php">Confirm</a></p>
       <?php
         }else{
       ?>
-        <p><a href="index.php?quanly=dangky">Đăng lý đặt hàng</a></p>
+        <p><a href="index.php?quanly=dangky">Pay</a></p>
       <?php
         }
       ?>
@@ -78,7 +79,7 @@
   }else{ 
   ?>
    <tr>
-    <td colspan="8"><p>Hiện tại giỏ hàng trống</p></td>
+    <td colspan="8"><p>The cart is currently empty</p></td>
    
   </tr>
   <?php
