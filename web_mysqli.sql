@@ -39,7 +39,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id_admin`, `username`, `password`, `admin_status`) VALUES
-(1, 'hieuadmin', '25f9e794323b453885f5181f1b624d0b', 1);
+(1, 'nhungadmin', '25f9e794323b453885f5181f1b624d0b', 1);
 
 -- --------------------------------------------------------
 
